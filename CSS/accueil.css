@@ -1,0 +1,49 @@
+body, html { 
+	background: url("./firstscreen.png") no-repeat fixed center; 
+	margin: 0rem;
+	padding: 0rem;
+	background-position: center;
+	background-size: 85%;
+    background-color: #731111; 
+}
+
+
+#main-title {
+color: #000;
+position: center;
+margin: 10% 0% 5% 0%;
+text-align: center;
+font-family: 'Kalam', cursive; 
+font-size: 3rem;
+  }
+
+div {
+	text-align: center;
+	}
+
+.button {
+	background-color: #443B3B; 
+	color: #FFF;
+	padding: 1rem;
+	font-family: 'Kalam', cursive; 
+	text-align: center;
+	position: center; 
+	display: inline-block;
+	text-decoration: none;
+	font-size: 24px; 
+	border-radius: 20rem;
+	width: 15rem;
+    height: 3.5rem;
+    flex-shrink: 0;
+	}
+
+.button:hover {
+	background-color:black;
+}
+
+#popcorn {
+	z-index: 2; 
+	position:absolute;
+	margin-left: 10rem; 
+	bottom: 10rem;
+	} 

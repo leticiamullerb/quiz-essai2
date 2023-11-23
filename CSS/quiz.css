@@ -1,0 +1,135 @@
+
+body, html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: url("./used background.png") no-repeat; 
+    background-size: cover;
+    background-color: #731111; 
+    display: flex;
+}
+
+@media screen and (min-width: 700px) {
+    #divScore {
+        font-size: 24px;
+    }
+    #questionDiv {
+        font-size: 22px;
+    }
+    .answerButton {
+        font-size: 28px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    #submitAnswer {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    #divScore {
+        font-size: 20px;
+    }
+    #questionDiv {
+        font-size: 18px;
+    }
+    .answerButton {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    #submitAnswer {
+        font-size: 15px;
+    }
+   
+}
+
+h1 {
+    font-family: 'Kalam';
+    position: fixed;
+    left: 5%;
+    top: 3%;
+}
+
+
+#startQuizz {
+    font-family: 'Kalam';
+    font-size: 2rem;
+    border-radius: 50px;
+    position: fixed;
+    left: 45%;
+    bottom: 35%;
+    box-shadow: 0 10px 10px 0;
+    visibility: visible;
+    }
+
+#submitAnswer {
+    font-family: 'Kalam';
+    border-radius: 50px;
+    position: fixed;
+    right: 15%;
+    bottom:50%;
+    box-shadow: 0 10px 10px 0;
+}
+
+#questionDiv {
+    top: 15%; 
+    margin: auto;
+    font-family: 'Kalam';
+    color: white;
+    display: inline-block;
+    text-align: center;
+}
+
+#startQuizz:hover, #submitAnswer:hover {
+    background-color:pink;
+
+}
+
+#answerDiv {
+    background-color:black;
+    opacity: 80%;
+    flex-flow: row wrap;
+    justify-content: center;
+    flex: 1;
+    border-radius: 50px;
+    box-shadow: 0 10px 10px 0;
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+
+.answerButton {
+    border-radius: 50px;
+    padding: 2px;
+    color: black;
+    outline: none;
+    font-family: 'Kalam';
+    margin: 10px;
+}
+
+.answerButton:hover {
+    background-color:pink;
+    }
+
+.answerButton.selected {
+    background: orange;
+}
+
+#divScore {
+    position: fixed;
+    right: 5%;
+    top: 3%; 
+    font-family: 'Kalam'; 
+    font-weight: bold;
+    background: darkseagreen;
+    padding: 1rem;
+    min-width: 80px;
+    min-height: 30px;
+    border-radius: 3rem;
+    box-shadow: 0 10px 10px 0;
+}
