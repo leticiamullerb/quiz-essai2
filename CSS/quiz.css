@@ -120,6 +120,12 @@ h1 {
     background: orange;
 }
 
+
+.answerButton.selectedAsPossibleAnswer {
+    border:5px solid purple;
+    background-color: aquamarine;
+}
+
 #divScore {
     position: fixed;
     right: 5%;
