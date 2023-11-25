@@ -5,7 +5,7 @@ window.onload = init;
 let currentQuestion = 0;
 let scoreGlobal = 0;
 let shuffledQuestions;
-var delayInMilliseconds = 2000;
+var delayInMilliseconds = 1500;
 let selectedAnswerIndices = [];
 let selectedAnswerIndex = [];
 let submitButton;
@@ -166,7 +166,7 @@ function displayQuestion(currentQuestion) {
         videoElement.style.width = tableauQuestions[currentQuestion].largeurImage;
         videoElement.style.margin = 'auto';
         videoElement.style.display = 'block';
-        videoElement.style.border = '10px solid white';
+        videoElement.style.border = '10px solid blanchedalmond';
         videoElement.controls = true;
         questionDiv.append(videoElement);
     } else {
@@ -176,7 +176,7 @@ function displayQuestion(currentQuestion) {
         imgElement.style.width = tableauQuestions[currentQuestion].largeurImage;
         imgElement.style.margin = 'auto';
         imgElement.style.display = 'block';
-        imgElement.style.border = '10px solid white';
+        imgElement.style.border = '10px solid blanchedalmond';
         imgElement.style.borderRadius = '150px';
         imgElement.style.maxHeight = '450px';
         questionDiv.append(imgElement);
@@ -405,7 +405,7 @@ function handleAnswerFeedback(selectedAnswerButtons, isCorrect) {
         let isCorrectAnswer = (button.dataset.correctAnswer === 'true');
         //let isCorrectAnswer = button.getAttribute('data-correctAnswer') === 'true';
 
-        button.style.background = isCorrectAnswer ? 'green' : 'red';
+        button.style.background = isCorrectAnswer ? '#74B72E' : 'brown';
     });
 
     //console.log(isCorrect ? "correct answer" : "wrong answer");

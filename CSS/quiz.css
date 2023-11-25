@@ -52,6 +52,7 @@ h1 {
     position: fixed;
     left: 5%;
     top: 3%;
+    color: #290916;
 }
 
 
@@ -64,39 +65,47 @@ h1 {
     bottom: 35%;
     box-shadow: 0 10px 10px 0;
     visibility: visible;
+    background-color: rosybrown;
     }
 
 #submitAnswer {
     font-family: 'Kalam';
     border-radius: 50px;
     position: fixed;
-    right: 15%;
-    bottom:50%;
+    right: 44%;
+    bottom:2%;
     box-shadow: 0 10px 10px 0;
+    background-color: rosybrown;
+    color: black;
+    opacity: 80%;
 }
 
 #questionDiv {
     top: 15%; 
     margin: auto;
     font-family: 'Kalam';
-    color: white;
+    color: blanchedalmond;
     display: inline-block;
     text-align: center;
 }
 
-#startQuizz:hover, #submitAnswer:hover {
+#startQuizz:hover {
     background-color:pink;
+}
+
+#submitAnswer:hover {
+    background-color: #FDAB9F;
 
 }
 
 #answerDiv {
-    background-color:black;
+    background-color:#290916;
     opacity: 80%;
     flex-flow: row wrap;
     justify-content: center;
     flex: 1;
     border-radius: 50px;
-    box-shadow: 0 10px 10px 0;
+    box-shadow: 0 10px 10px black;
     max-width: 90%;
     margin: auto;
     text-align: center;
@@ -110,32 +119,30 @@ h1 {
     outline: none;
     font-family: 'Kalam';
     margin: 10px;
+    background-color: rosybrown;
 }
 
 .answerButton:hover {
     background-color:pink;
     }
 
-.answerButton.selected {
-    background: orange;
-}
-
 
 .answerButton.selectedAsPossibleAnswer {
-    border:5px solid purple;
-    background-color: aquamarine;
+    border:3px solid beige;
+    background-color: blanchedalmond;
 }
 
 #divScore {
     position: fixed;
     right: 5%;
-    top: 3%; 
+    top: 5%; 
     font-family: 'Kalam'; 
     font-weight: bold;
-    background: darkseagreen;
+    background: #4E0707;
+    color: beige;
     padding: 1rem;
     min-width: 80px;
     min-height: 30px;
     border-radius: 3rem;
-    box-shadow: 0 10px 10px 0;
+    box-shadow: 0 3px 3px black;
 }
